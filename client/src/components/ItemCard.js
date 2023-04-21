@@ -8,6 +8,7 @@ const ItemCard = ({ item }) => {
       <Card.Img
         variant="top"
         src={item.image_url || "https://via.placeholder.com/150"}
+        style={{  width: 286, height: 286, objectFit: "cover" }}
       />
       <Card.Body>
         <Card.Title>{item.name}</Card.Title>

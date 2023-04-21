@@ -1,0 +1,19 @@
+/* ItemDetails.css */
+
+.item-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .item-details-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .item-details-container p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  

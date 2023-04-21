@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import config from "../config";
+import "./ItemDetails.css";
 
 const ItemDetails = () => {
   const { id } = useParams();
@@ -27,12 +28,18 @@ const ItemDetails = () => {
   }
 
   return (
-    <div>
+    <div className="item-details-container">
       <h1>{item.name}</h1>
+      {item.image_url && (
+        <img
+          src={item.image_url}
+          alt={item.name}
+          style={{ width: 150, height: 150, objectFit: "cover" }}
+        />
+      )}
       <p>{item.description}</p>
       <p>Price: ${Number(item.price).toFixed(2)}</p>
       <p>Category: {item.Category.name}</p>
-      {item.image_url && <img src={item.image_url} alt={item.name} />}
     </div>
   );
 };
