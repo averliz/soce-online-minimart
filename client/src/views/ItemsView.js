@@ -22,7 +22,6 @@ const ItemsView = () => {
 
   return (
     <div>
-      <h1>Items</h1>
       <div className="item-grid">
         {items.map((item) => (
           <ItemCard key={item.id} item={item} />
