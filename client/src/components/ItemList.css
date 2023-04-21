@@ -1,0 +1,34 @@
+/* ItemList.css */
+
+.item-list-container {
+  padding: 20px;
+}
+
+.item-list-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.item:hover {
+  background-color: #f8f9fa;
+}
